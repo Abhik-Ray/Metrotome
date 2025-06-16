@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
         <span>Metronome</span>
       </li>
       <li>
-        <a href="#">User</a>
+        <div href="#">User</div>
       </li>
     </nav>
   `,
