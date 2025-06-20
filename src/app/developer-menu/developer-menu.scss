@@ -1,0 +1,115 @@
+.main-container {
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+    background-color: #1a202c; /* Dark background from Tailwind's gray-900 */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to top */
+    min-height: 100vh;
+    padding: 2rem; /* Overall page padding */
+    h2{
+        margin: none;
+    }
+}
+.api-table-container {
+            width: 100%;
+            max-width: 900px;
+            background-color: #2d3748;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            th {
+                background-color: #4a5568;
+                color: #e2e8f0;
+                padding: 1rem 1.5rem;
+                text-align: left;
+                font-size: 1.125rem;
+                font-weight: 700;
+                border-bottom: 1px solid #2d3748;
+            }
+
+            td {
+                padding: 1rem 1.5rem;
+                vertical-align: top;
+                border-bottom: 1px solid #4a5568;
+                color: #e2e8f0;
+
+                &.GET,
+                &.POST,
+                &.LATCH, /* Changed from PATCH to LATCH due to a typo in the user's previous HTML, please correct if PATCH is intended */
+                &.DELETE {
+                    background-color: #2d3748;
+                    width: 30%;
+                    border-right: 1px solid #4a5568;
+                    transition: background-color 0.2s ease-in-out;
+
+                    &:hover {
+                        background-color: #4a5568;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            h5 {
+                font-size: 1.125rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+                color: #63b3ed;
+            }
+
+            textarea {
+                width: 100%;
+                min-height: 100px;
+                padding: 0.75rem;
+                background-color: #1a202c;
+                color: #e2e8f0;
+                border: 1px solid #4a5568;
+                border-radius: 0.375rem;
+                resize: vertical;
+                outline: none;
+                transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+                &:focus {
+                    border-color: #63b3ed;
+                    box-shadow: 0 0 0 2px rgba(99, 179, 237, 0.5);
+                }
+
+                &.response {
+                    min-height: 150px;
+                }
+            }
+
+            .call-button {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0.75rem 1.5rem;
+                margin-top: 1rem;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 0.5rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+                &:hover {
+                    background-color: #43A047;
+                    box-shadow: 0 6px 10px -2px rgba(0, 0, 0, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+                    transform: translateY(-2px);
+                }
+
+                &:active {
+                    background-color: #388E3C;
+                    transform: translateY(0);
+                    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.08), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
+                }
+            }
+        }

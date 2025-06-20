@@ -1,19 +1,20 @@
-import { Injectable } from '@angular/core';
 import Dexie, {Table} from 'dexie'
-import { 
-  User,
-  UserProgress,
-  UserConfig,
-  Sheet,
+import {
+  Genre,
   Instrument,
   Note,
-  SheetReference,
+  Sheet,
   SheetBackingTrack,
-  Genre,
- } from './dbSchema.types';
+  SheetReference,
+  User,
+  UserConfig,
+  UserProgress,
+} from './dbSchema.types';
+
+import { GetUsers } from './db.types';
+import { Injectable } from '@angular/core';
 import { PopulationScripts } from './populationScripts';
 import { environment } from '../../../../environments/environment';
-import { GetUsers } from './db.types';
 
 @Injectable({
   providedIn: 'root'
