@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   template: `
     <nav>
       <li>
-        <span>Metronome</span>
+        <span>Metrotome</span>
       </li>
       <li>
         <div href="#">User</div>
@@ -15,6 +15,4 @@ import { Component } from '@angular/core';
   `,
   styleUrl: './navbar.scss'
 })
-export class Navbar {
-
-}
+export class Navbar {}
