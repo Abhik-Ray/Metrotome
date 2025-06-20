@@ -72,7 +72,19 @@ export class Db {
     }
   }
 
+  getAPICalls(){
+    return {
+      userTable: {
+        get: this.getUsers,
+        post: this.postUsers,
+        patch: this.patchUsers,
+        delete: this.deleteUsers
+      }
+    }
+  }
+
   async getUsers(params: GetUsers){
+    console.log(params)
     if(params.id){
       return await this.db.userTable.get(params.id)
     } else if(params.ids){
