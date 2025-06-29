@@ -21,18 +21,29 @@
             padding-left: 0;
             display: flex;
             flex-direction: column;
-            * {
-                border-radius: 0;
+            *{
                 font-size: 0.75rem;
+            }
+            form-field {
+                border-radius: 0;
             }
         }
 
         .actions {
             padding-left: 0;
-
+            display: flex;
+            flex-direction: column;
+            align-items: start;
             button {
                 border-radius: 0;
                 padding: 0;
+            }
+            .error-msg{
+                bottom: 5%;
+                // margin-top: 0.5rem;
+                font-size: 0.75rem;
+                font-family: 'Roboto';
+                position: absolute;
             }
         }
     }

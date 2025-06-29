@@ -24,9 +24,18 @@ export class MockApi {
   }
 
   async getUser(username: string, password: string) {
+    console.log(this);
     await this.db.read();
-    return this.db.data?.users.find(
+    const user = this.db.data?.users.find(
       user => user.username === username && user.password === password
     );
+    if(!user){
+      return {
+        code: 404,
+        message: 'Incorrect username or password!'
+      }
+    } else {
+      return user;
+    }
   }
 }
