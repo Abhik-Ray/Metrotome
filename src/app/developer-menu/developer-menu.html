@@ -1,0 +1,70 @@
+<div class="main-container">
+  <div class="api-table-container">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">API Endpoints</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="GET">
+            <textarea
+              class="params"
+              data-method="GET"
+              placeholder="e.g., /users/{id} or /users?name=John"
+            ></textarea>
+            <button class="call-button" data-method="GET" (click)="onRequestClick($event)"><span class="GET">GET</span></button>
+          </td>
+          <td>
+            <textarea
+              class="response"
+              placeholder="Response data will appear here..."
+              data-method="GET"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td class="POST">
+            <textarea
+              placeholder="e.g., { 'name': 'New User', 'email': 'new@example.com' }"
+            ></textarea>
+            <button class="call-button"><span class="POST">POST</span></button>
+          </td>
+          <td>
+            <textarea
+              class="response"
+              placeholder="Response data will appear here..."
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td class="PATCH">
+            <textarea
+              placeholder="e.g., { 'id': 1, 'email': 'updated@example.com' }"
+            ></textarea>
+            <button class="call-button"><span class="PATCH">PATCH</span></button>
+          </td>
+          <td>
+            <textarea
+              class="response"
+              placeholder="Response data will appear here..."
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td class="DELETE">
+            <textarea placeholder="e.g., /users/{id}"></textarea>
+            <button class="call-button"><span class="DELETE">DELETE</span></button>
+          </td>
+          <td>
+            <textarea
+              class="response"
+              placeholder="Response data will appear here..."
+            ></textarea>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
